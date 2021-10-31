@@ -2,10 +2,6 @@ body{
   background-color:  #4B9CD3;
   font-family: 'Times New Roman', Times, serif;
   padding: 1%;
-  letter-spacing: normal;
-  line-height: normal;
-  text-indent: 0%;
-  word-spacing: 0%;
 }
 
 #logo{
@@ -30,7 +26,7 @@ ul{
   background-color: #333;
 }
     
-li {
+ul > li {
   float: left;
 }
     
@@ -143,8 +139,16 @@ li a:hover {
   overflow: auto;
 }
 
+.asideSteden{
+  font-weight: bold;
+}
+
 a{
   color: blue;
+}
+
+a:active {
+  color: #45a049;
 }
 
 
@@ -164,6 +168,9 @@ a{
 .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7, .grid-item8, .grid-item9{
   background-color: #E0E0E0;
   padding: 1%;
+  border-style: double;
+  border-width: 5px;
+  border-color: #C46210;
 }
 
 .grid-item1{
@@ -220,6 +227,7 @@ a{
 
 table, td, th {
   border: 1px solid black;
+  border-color: #FFF
 }
 
 th{
@@ -235,6 +243,7 @@ table {
   width: 79%;
   height: auto;
   border-collapse: collapse;
+  border-width: 1px;
 }
 
 #ticketsAside{
@@ -274,18 +283,6 @@ table {
 }
 
 input, select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-
-#emailInput{
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -461,8 +458,16 @@ input[type=submit]:hover {
     overflow: auto;
   }
   
+  .asideSteden{
+    font-weight: bold;
+  }
+  
   a{
     color: blue;
+  }
+
+  a:active {
+    color: #45a049;
   }
   
   
@@ -555,6 +560,7 @@ input[type=submit]:hover {
     height: auto;
     border-collapse: collapse;
     font-size: 30px;
+    border-width: 1px;
   }
   
   #ticketsAside{
@@ -731,6 +737,10 @@ input[type=submit]:hover {
     z-index: 9999;
     overflow: auto;
   }
+  
+  .asideSteden{
+    font-weight: bold;
+  }
 
   /* hier begint grid pagina */
   
@@ -823,6 +833,7 @@ input[type=submit]:hover {
     height: auto;
     border-collapse: collapse;
     font-size: 13px;
+    border-width: 1px;
   }
   
   #ticketsAside{
@@ -862,7 +873,7 @@ input[type=submit]:hover {
     margin-bottom: 16px;
     resize: vertical;
   }
-
+  
   input[type=submit] {
     background-color: #04AA6D;
     color: white;
@@ -894,6 +905,10 @@ input[type=submit]:hover {
     transition: color 0.3s ease;
   }
 
+  a:active {
+    color: #45a049;
+  }
+
 a:hover
 {
   color: tomato;
@@ -917,7 +932,7 @@ a:hover
     
     transition: color 0.3s ease;
   }
-  
+
   #menuToggle a:hover
   {
     color: tomato;

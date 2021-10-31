@@ -4,8 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Tickets</title>
+        <meta name="author" content="Yigithan Dincer">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/logo-favicon.png"/>
+        <title>Contact</title>
     </head>
 <body>
     <header>
@@ -32,7 +34,7 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="bestdestinations.html">Best Destinations</a>
+                        <a href="bestdestinations.html">Beste bestemmingen</a>
                     </li>
                     <li>
                         <a href="tickets.html">Tickets</a>
@@ -52,38 +54,41 @@
 
             <aside id="ticketsAside">
                 <a href="https://tui.nl/">
-                    <img class="ticketsImages" src="img/tuipushpicture1.jpg" alt="Sunning">
+                    <img class="ticketsImages" src="img/tuipushpicture1.jpg" alt="Sunning" title="Foto van mensen die zonnen">
                 </a>
 
                 <a href="https://tui.nl/">
-                    <img class="ticketsImages" src="img/tuipushpicture2.jpg" alt="Drinking">
+                    <img class="ticketsImages" src="img/tuipushpicture2.jpg" alt="Drinks" title="Foto van drinken">
                 </a>
 
                 <a href="https://tui.nl/">
-                    <img class="ticketsImages" src="img/tuipushpicture3.jpg" alt="Snowboarding">
+                    <img class="ticketsImages" src="img/tuipushpicture3.jpg" alt="Snowboarding" title="Foto van een man met een snowboard">
                 </a>
+                <small>&#169;Tui</small>
             </aside>
-            <fieldset id="contactFieldset">
-                <legend>Stel uw vragen hier</legend>
-            
-                <label name="name">Naam</label>
-                <input type="text">
-            
-                <label name="email">email</label>
-                <input type="text">
+            <form id="contactFieldset">
+                <fieldset>
+                    <legend>Stel uw vragen hier</legend>
+                
+                    <label>Naam</label>
+                    <input type="text">
+                
+                    <label>Email</label>
+                    <input id="emailInput" type="email" value="email">
 
-                <label name="message">bericht</label>
-                <input class="contactTextInput" type="text">
+                    <label>Bericht</label>
+                    <input class="contactTextInput" type="text">
 
-                <input type="submit" value="Submit">
-            </fieldset>
+                    <input type="submit" value="submit">
+                </fieldset>
+            </form>
         </section>
     </main>
 
     <footer>
         <section id="copyright">
             <p class="copyright">
-                &#169 Yigithan Dincer
+                &#169;Yigithan Dincer
             </p>
             <p id="cookies">
                 Cookie statement

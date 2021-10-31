@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Home</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Yigithan Dincer">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/logo-favicon.png"/>
+        <title>Home</title>
+    </head>
 <body>
     <header>
         <img id="logo" src="img/logo.png" alt="logo">
@@ -28,7 +30,7 @@
 
                 <ul id="menu">
                     <li>
-                        <a href="bestdestinations.html">Best destinations</a>
+                        <a href="bestdestinations.html">Beste bestemmingen</a>
                     </li>
                     <li>
                         <a href="tickets.html">Tickets</a>
@@ -44,8 +46,9 @@
     <main>
         <section id="container">
             <section class="travelSection">
-                <video autoplay muted
-                    id="travelingPromotion" src="vid/traveling.mp4" src="vid/traveling.ogg">
+                <video id="travelingPromotion" autoplay muted>
+                     <source src="vid/traveling.mp4" type="video/mp4">
+                    <source src="vid/traveling.ogg" type="video/ogg">
                 </video>
             </section>
             <section class="homeSection">
@@ -90,41 +93,56 @@
                 </article>
             </section>
 
-            <section class="homeSectionImages">
+            <figure class="homeSectionImages">
                 <a href="https://pauschalreisen.dertour.de/angebote/">
-                    <img class="homeImages" src="img/antalya.jpg" alt="Antalya" copyright="cc by www.dertour.de">
+                    <img class="homeImages" src="img/antalya.jpg" alt="Antalya" title="Foto van Antalya">
                 </a>
                 <a href="http://www.welkominturkije.nl">
-                    <img class="homeImages" src="img/izmir.jpg" alt="Izmir" copyright="cc by http://www.welkominturkije.nl">
+                    <img class="homeImages" src="img/izmir.jpg" alt="Izmir" title="Foto van Izmir">
                 </a>
                 <a href="https://www.tui.nl/">
-                    <img class="homeImages" src="img/goreme.jpg" alt="Goreme" copyright="cc by www.travellink-indonesia.com">
+                    <img class="homeImages" src="img/goreme.jpg" alt="Goreme" title="Foto van Goreme">
                 </a>
-
-            </section>
+                <small>&#169;Dertour</small>
+                <small>&#169;Welkominturkije</small>
+                <small>&#169;Travellink-indonesia</small>
+                <figcaption>
+                    Steden in Turkije
+                </figcaption>
+            </figure>
 
             <section class="homeSectionAside">
                 <aside id="aside">
+                    <h4>Toekomstige beroemde plekken</h4>
                     <ol>
-                        <h4 class="asideKop">Toekomstige beroemde plekken</h4>
                         <li>
-                            <em class="asideSteden">Edinburgh</em>
+                            <strong>
+                                <em>Edinburgh</em>
+                            </strong>
                             <p>Beklim de Arthurs Seat voor een prachtige uitzicht</p>
                         </li>
                         <li>
-                            <em class="asideSteden">Brugge</em>
+                            <strong>
+                                <em>Brugge</em>
+                            </strong>
                             <p>Bezienswaardigheden zoals: Belfort, de Markt en de Crowne Plaza</p>
                         </li>
                         <li>
-                            <em class="asideSteden">Avignon</em>
+                            <strong>
+                                <em>Avignon</em>
+                            </strong>
                             <p>Prachtige stad vooral Palais des Papes</p>
                         </li>
                         <li>
-                            <em class="asideSteden">Colmar</em>
+                            <strong>
+                                <em>Colmar</em>
+                            </strong>
                             <p>Vrolijk geschilderde vakwerkhuisjes met houten lijsten</p>
                         </li>
                         <li>
-                            <em class="asideSteden">Sevilla</em>
+                            <strong>
+                                <em>Sevilla</em>
+                            </strong>
                             <p>Een mooie koninklijke paleis, Real Alcazar</p>
                         </li>
                     </ol>
@@ -136,7 +154,7 @@
     <footer>
         <section id="copyright">
             <p class="copyright">
-                &#169 Yigithan Dincer
+                &#169;Yigithan Dincer
             </p>
             <p id="cookies">
                 Cookie statement
