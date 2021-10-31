@@ -1,0 +1,986 @@
+body{
+  background-color:  #4B9CD3;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 1%;
+}
+
+#logo{
+  width: 115px;
+  height: 90px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+#menuToggle{
+  width: 100%;
+  height: auto;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+    
+li {
+  float: left;
+}
+    
+li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+    
+li a:hover {
+  background-color: #111;
+}
+
+#container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#travelingPromotion{
+  width: 100%;
+  margin-top: 1em;
+}
+
+.travelSection{
+  width: 100%;
+  height: auto;
+  order: 0;
+}
+
+.homeSection{
+  flex-direction: row;
+  width: 100%;
+}
+
+.articles{
+  background-color: #E0E0E0;
+  width: 100%;
+  padding: 1%;
+}
+
+.homeTextHeader{
+  font-weight: bold;
+}
+
+.homeSectionAside{
+  padding-top: 1%
+}
+
+.homeSection{
+  flex-direction: row;
+    width: 47%;
+    height: auto;
+}
+
+.homeSectionImages{
+  width: 25%;
+  padding: 1%;
+}
+.homeImages{
+  width: 94.5%;
+  height: 106px;
+  float: right;
+  padding-bottom: 2%;
+}
+
+#aside{
+  float: right;
+  background-color: #E0E0E0;
+  width: 284px;
+  height: 466px;
+  
+  padding: 1%;
+}
+
+#copyright{
+  width: 100%;
+  height: 70px;
+  text-align: start;
+  color: #FFF;
+}
+
+.copyright{
+  width: 79.3%;
+  background-color: black;
+  padding: 1%;
+}
+
+#cookies{
+  position: fixed;
+  background-color: #FA0;
+  opacity: 50%;
+  width: 16.4%;
+  padding: 1%;
+  bottom: 2.6%;
+  margin-left: 79%;
+  overflow: auto;
+}
+
+.asideSteden{
+  font-weight: bold;
+}
+
+a{
+  color: blue;
+}
+
+
+/* hier begint grid pagina */
+
+.gridNav{
+  margin-bottom: 10px;
+}
+
+#grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+}
+
+.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7, .grid-item8, .grid-item9{
+  background-color: #E0E0E0;
+  padding: 1%;
+}
+
+.grid-item1{
+  grid-column: 2;
+  grid-row: 1/3;
+}
+
+.grid-item2{
+  grid-column: 1;
+}
+
+.grid-item3{
+  grid-column: 3;
+}
+
+.grid-item4{
+  grid-column: 3;
+}
+
+.grid-item5{
+  grid-column: 1;
+  grid-row: 2/4;
+}
+
+.grid-item6{
+  grid-column: 2/4;
+  grid-row: 3/3;
+}
+
+.grid-item7{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.grid-item8{
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.grid-item9{
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+.gridImages{
+  width: 100%;
+  height: 100%;
+}
+
+/* tickets */
+#tableContainer{
+  width: 100%;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+th{
+  background-color: honeydew;
+}
+
+
+tr:nth-child(even) {
+  background-color: #6699CC;
+}
+
+table {
+  width: 79%;
+  height: auto;
+  border-collapse: collapse;
+}
+
+#ticketsAside{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  float: right;
+  width: 220px;
+  height: 240px;
+  padding-left: 1%;
+}
+
+.ticketsArticle{
+  background-color: #E0E0E0;
+  padding: 1%;
+}
+
+.ticketsImages{
+  width: 220px;
+  height: auto;
+}
+
+
+/* Contact formulier */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.contactTextInput{
+  height: 200px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1179px) {
+  body{
+    background-color:  #318CE7;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1%;
+    width: 100%;
+  }
+  
+  #logo{
+    width: 115px;
+    height: 90px;
+  }
+  
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+      
+  li {
+    float: left;
+  }
+      
+  li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+      
+  li a:hover {
+    background-color: #111;
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  #container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  #travelingPromotion{
+    width: 100%;
+    margin-top: 1em;
+  }
+  
+  .homeSection{
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .articles{
+    background-color: #E0E0E0;
+    width: 100%;
+    padding: 1%;
+  }
+  
+  .homeTextHeader{
+    font-weight: bold;
+  }
+  
+  .homeSectionAside{
+    padding-top: 1%;
+    padding-left: 1%;
+    float: left;
+    order: -1;
+    margin-right: auto;
+}
+
+  .homeSection{
+    flex-direction: row;
+    width: 47%;
+    height: auto;
+  }
+  
+  .travelSection{
+    width: 100%;
+    height: auto;
+    order: 0;
+  }
+
+  .homeSectionImages{
+    width: 46%;
+    padding: 1%;
+    order: 1;
+    justify-content: center;
+  }
+  .homeImages{
+    width: 94.5%;
+    height: 106px;
+    float: right;
+    padding-bottom: 2%;
+  }
+  
+  #aside{
+    float: right;
+    background-color: #E0E0E0;
+    width: 290px;
+    height: 466px;
+    padding: 1%;
+  }
+  
+  #copyright{
+    width: 100%;
+    height: 70px;
+    text-align: start;
+    color: #FFF;
+  }
+  
+  .copyright{
+    width: 79.3%;
+    background-color: black;
+    padding: 1%;
+  }
+  
+  #cookies{
+    position: fixed;
+    background-color: #FA0;
+    opacity: 50%;
+    width: 16.4%;
+    padding: 1%;
+    bottom: 2.6%;
+    margin-left: 79%;
+    overflow: auto;
+  }
+  
+  .asideSteden{
+    font-weight: bold;
+  }
+  
+  a{
+    color: blue;
+  }
+  
+  
+  /* hier begint grid pagina */
+  
+  .gridNav{
+    margin-bottom: 10px;
+  }
+  
+  #grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+  }
+  
+  .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7, .grid-item8, .grid-item9{
+    background-color: #E0E0E0;
+    padding: 1%;
+  }
+  
+  .grid-item1{
+    grid-column: 1;
+    grid-row: 1/2;
+  }
+  
+  .grid-item2{
+    grid-column: 2;
+  }
+  
+  .grid-item3{
+    grid-column: 1;
+  }
+  
+  .grid-item4{
+    display: none;
+  }
+  
+  .grid-item5{
+    grid-column: 2;
+    grid-row: 2/3;
+  }
+  
+  .grid-item6{
+    grid-column: 1/3;
+    grid-row: 3/3;
+  }
+  
+  .grid-item7{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  
+  .grid-item8{
+    grid-column: 2/4;
+    grid-row: 4/5;
+  }
+  
+  .grid-item9{
+    display: none;
+  }
+  
+  .gridImages{
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* tickets */
+  #tableContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  table, td, th {
+    border: 1px solid black;
+  }
+  
+  th{
+    background-color: honeydew;
+  }
+  
+  
+  tr:nth-child(even) {
+    background-color: #6699CC;
+  }
+  
+  table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+  }
+  
+  #ticketsAside{
+    flex-direction: row;
+    align-items: center;
+    float: right;
+    width: 220px;
+    height: 240px;
+    padding-left: 1%;
+    order: 1;
+  }
+  #bestDestinationsTabletImage{
+    display: none;
+  }
+  .ticketsArticle{
+    background-color: #E0E0E0;
+    padding: 1%;
+  }
+  
+  .ticketsImages{
+    width: 220px;
+    height: auto;
+  }
+  
+  
+  /* Contact formulier */
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .contactTextInput{
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body{
+    background-color:  #00BFFF;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1%;
+    overflow-x: hidden;
+  }
+  
+  #logo{
+    display: none;
+  }
+  
+  #container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  #travelingPromotion{
+    display: none;
+  }
+  
+  .homeSection{
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .articles{
+    background-color: #E0E0E0;
+    width: 100%;
+    padding: 1%;
+  }
+  
+  .homeTextHeader{
+    font-weight: bold;
+  }
+  
+  .homeSectionAside{
+    padding-top: 1%;
+    float: left;
+    order: -1;
+    margin-right: auto;
+  }
+
+  .homeSection{
+    flex-direction: row;
+    width: 47%;
+    height: auto;
+  }
+  
+  .travelSection{
+    width: 100%;
+    height: auto;
+    order: 0;
+  }
+
+  .homeSectionImages{
+    width: 46%;
+    padding: 1%;
+    order: 1;
+    justify-content: center;
+  }
+  .homeImages{
+    width: 94.5%;
+    height: 106px;
+    float: right;
+    padding-bottom: 171%;
+  }
+  
+  #aside{
+    float: right;
+    background-color: #E0E0E0;
+    width: 290px;
+    height: 466px;
+    padding: 1%;
+  }
+  
+  #copyright{
+    width: 100%;
+    height: 70px;
+    text-align: start;
+    color: #FFF;
+  }
+  
+  .copyright{
+    width: 79.3%;
+    background-color: black;
+    padding: 1%;
+  }
+  
+  #cookies{
+    position: fixed;
+    background-color: #FA0;
+    opacity: 50%;
+    width: 16.4%;
+    padding: 1%;
+    bottom: 2.6%;
+    margin-left: 79%;
+    overflow: auto;
+  }
+  
+  .asideSteden{
+    font-weight: bold;
+  }
+  
+  a{
+    color: blue;
+  }
+  
+  
+  /* hier begint grid pagina */
+  
+  .gridNav{
+    margin-bottom: 10px;
+  }
+  
+  #grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+  }
+  
+  .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7, .grid-item8, .grid-item9{
+    background-color: #E0E0E0;
+    padding: 1%;
+  }
+  
+  .grid-item1{
+    grid-column: 1/4;
+    grid-row: 4/5;
+  }
+  
+  .grid-item2{
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+  
+  .grid-item3{
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+  
+  .grid-item4{
+    display: none;
+  }
+  
+  .grid-item5{
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  
+  .grid-item6{
+    display: none;
+  }
+  
+  .grid-item7{
+    grid-column: 1/4;
+    grid-row: 5/6;
+  }
+  
+  .grid-item8{
+    grid-column: 1/4;
+    grid-row: 6/7;
+  }
+  
+  .grid-item9{
+    grid-column: 1/4;
+    grid-row: 7/8;
+  }
+  
+  .gridImages{
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* tickets */
+  #tableContainer{
+    width: 100%;
+  }
+  
+  table, td, th {
+    border: 1px solid black;
+  }
+  
+  th{
+    background-color: honeydew;
+  }
+  
+  
+  tr:nth-child(even) {
+    background-color: #6699CC;
+  }
+  
+  table {
+    width: 87%;
+    height: auto;
+    border-collapse: collapse;
+  }
+  
+  #ticketsAside{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    float: right;
+    width: 220px;
+    height: 240px;
+    padding-left: 1%;
+  }
+  
+  .ticketsArticle{
+    background-color: #E0E0E0;
+    padding: 1%;
+  }
+  
+  .ticketsImages{
+    width: 220px;
+    height: auto;
+  }
+  
+  
+  /* Contact formulier */
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .contactTextInput{
+    height: 200px;
+  }
+
+
+  /* responsive hamburger menu */
+
+  a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: tomato;
+}
+  #menuToggle
+  {
+    display: block;
+    position: relative;
+    top: -120px;
+    left: 320px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  #menuToggle a
+  {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+  }
+  
+  #menuToggle a:hover
+  {
+    color: tomato;
+  }
+  
+  
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+  
+  /*
+   * Just a quick hamburger
+   */
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #cdcdcd;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  
+  /* 
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  
+  /*
+   * But let's hide the middle one.
+   */
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  /*
+   * Ohyeah and the last one should go the other direction
+   */
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+  #menu
+  {
+    position: absolute;
+    width: 140px;
+    margin: -115px 0 0 -110px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  #menu li
+  {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  
+  /*
+   * And let's slide it in from the left
+   */
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+}
