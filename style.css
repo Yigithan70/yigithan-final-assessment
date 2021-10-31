@@ -127,6 +127,7 @@ li a:hover {
   padding: 1%;
   bottom: 2.6%;
   margin-left: 79%;
+  z-index: 9999;
   overflow: auto;
 }
 
@@ -415,6 +416,7 @@ input[type=submit]:hover {
     padding: 1%;
     bottom: 2.6%;
     margin-left: 79%;
+    z-index: 9999;
     overflow: auto;
   }
   
@@ -515,6 +517,7 @@ input[type=submit]:hover {
     width: 100%;
     height: auto;
     border-collapse: collapse;
+    font-size: 30px;
   }
   
   #ticketsAside{
@@ -676,18 +679,14 @@ input[type=submit]:hover {
     padding: 1%;
     bottom: 2.6%;
     margin-left: 79%;
+    z-index: 9999;
     overflow: auto;
   }
   
   .asideSteden{
     font-weight: bold;
   }
-  
-  a{
-    color: blue;
-  }
-  
-  
+
   /* hier begint grid pagina */
   
   .gridNav{
@@ -756,7 +755,9 @@ input[type=submit]:hover {
   
   /* tickets */
   #tableContainer{
+    display: flex;
     width: 100%;
+    flex-direction: column;
   }
   
   table, td, th {
@@ -773,29 +774,30 @@ input[type=submit]:hover {
   }
   
   table {
-    width: 87%;
+    width: 100%;
     height: auto;
     border-collapse: collapse;
+    font-size: 13px;
   }
   
   #ticketsAside{
-    display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     float: right;
     width: 220px;
     height: 240px;
     padding-left: 1%;
+    order: 1;
   }
-  
+
   .ticketsArticle{
     background-color: #E0E0E0;
     padding: 1%;
   }
   
-  .ticketsImages{
+  #bestDestionationsTabletImage, .ticketsImages{
     width: 220px;
-    height: auto;
+    height: 65px;
   }
   
   
@@ -838,13 +840,10 @@ input[type=submit]:hover {
 
   /* responsive hamburger menu */
 
-  a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
-}
+  a{
+    color: blue;
+    transition: color 0.3s ease;
+  }
 
 a:hover
 {
@@ -865,7 +864,6 @@ a:hover
   
   #menuToggle a
   {
-    text-decoration: none;
     color: #232323;
     
     transition: color 0.3s ease;
@@ -909,8 +907,8 @@ a:hover
     transform-origin: 4px 0px;
     
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
   }
   
   #menuToggle span:first-child
@@ -959,7 +957,7 @@ a:hover
   {
     position: absolute;
     width: 140px;
-    margin: -115px 0 0 -110px;
+    margin: -115px 0 0 -158px;
     padding: 50px;
     padding-top: 125px;
     background: #ededed;
