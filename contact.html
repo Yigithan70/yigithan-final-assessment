@@ -19,52 +19,75 @@
             <em>Tijd voor vakantie.</em>
         </h2>
 
-        <nav>
-            <ul class="gridNav">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="bestdestinations.html">Best destinations</a>
-                </li>
-                <li>
-                    <a href="tickets.html">Tickets</a>
-                </li>
-              </ul>
+        <nav role="navigation">
+            <section id="menuToggle">
+                <input type="checkbox"/>
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="bestdestinations.html">Best Destinations</a>
+                    </li>
+                    <li>
+                        <a href="tickets.html">Tickets</a>
+                    </li>
+                </ul>
+            </section>
         </nav>
     </header>
 
     <main>
-        <aside id="ticketsAside">
-            <a href="https://tui.nl/">
-                <img class="ticketsImages" src="img/tuipushpicture1.jpg" alt="Sunning">
-            </a>
+        <section id="contactContainer">
+            <article class="contactInformation">
+                <p>
+                    In dit formulier kunt u vragen stellen.
+                </p>
+            </article>
 
-            <a href="https://tui.nl/">
-                <img class="ticketsImages" src="img/tuipushpicture2.jpg" alt="Drinking">
-            </a>
+            <aside id="ticketsAside">
+                <a href="https://tui.nl/">
+                    <img class="ticketsImages" src="img/tuipushpicture1.jpg" alt="Sunning">
+                </a>
 
-            <a href="https://tui.nl/">
-                <img class="ticketsImages" src="img/tuipushpicture3.jpg" alt="Snowboarding">
-            </a>
-        </aside>
-        <fieldset>
-            <legend>Stel uw vragen hier</legend>
-        
-            <label name="name">Naam</label>
-            <input type="text">
-        
-            <label name="email">email</label>
-            <input type="text">
+                <a href="https://tui.nl/">
+                    <img class="ticketsImages" src="img/tuipushpicture2.jpg" alt="Drinking">
+                </a>
 
-            <label name="message">bericht</label>
-            <input class="contactTextInput" type="text">
+                <a href="https://tui.nl/">
+                    <img class="ticketsImages" src="img/tuipushpicture3.jpg" alt="Snowboarding">
+                </a>
+            </aside>
+            <fieldset id="contactFieldset">
+                <legend>Stel uw vragen hier</legend>
+            
+                <label name="name">Naam</label>
+                <input type="text">
+            
+                <label name="email">email</label>
+                <input type="text">
 
-            <input type="submit" value="Submit">
-          </fieldset>
+                <label name="message">bericht</label>
+                <input class="contactTextInput" type="text">
+
+                <input type="submit" value="Submit">
+            </fieldset>
+        </section>
     </main>
 
     <footer>
-
+        <section id="copyright">
+            <p class="copyright">
+                &#169 Yigithan Dincer
+            </p>
+            <p id="cookies">
+                Cookie statement
+            </p>
+        </section>
     </footer>
 </html>

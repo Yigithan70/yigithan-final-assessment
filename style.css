@@ -50,6 +50,14 @@ li a:hover {
   flex-wrap: wrap;
 }
 
+#contactContainer{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
 #travelingPromotion{
   width: 100%;
   margin-top: 1em;
@@ -252,6 +260,19 @@ table {
 
 /* Contact formulier */
 
+#contactFieldset{
+  width: 76%;
+}
+
+.contactInformation{
+  width: 98%;
+  height: auto;
+  background-color: #E0E0E0;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -332,6 +353,14 @@ input[type=submit]:hover {
     flex-direction: row-reverse;
     justify-content: space-between;
     width: 100%;
+  }
+
+  #contactContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
   }
   
   #travelingPromotion{
@@ -521,7 +550,7 @@ input[type=submit]:hover {
   }
   
   #ticketsAside{
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     float: right;
     width: 220px;
@@ -539,12 +568,16 @@ input[type=submit]:hover {
   
   .ticketsImages{
     width: 220px;
-    height: auto;
+    height: 100px;
   }
   
   
   /* Contact formulier */
   
+  #contactFieldset{
+    width: 46%;
+  }
+
   input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -597,6 +630,14 @@ input[type=submit]:hover {
     flex-direction: row-reverse;
     justify-content: space-between;
     width: 100%;
+  }
+
+  #contactContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    flex-flow: wrap;
   }
   
   #travelingPromotion{
@@ -666,7 +707,7 @@ input[type=submit]:hover {
   }
   
   .copyright{
-    width: 79.3%;
+    width: 65%;
     background-color: black;
     padding: 1%;
   }
@@ -678,7 +719,7 @@ input[type=submit]:hover {
     width: 16.4%;
     padding: 1%;
     bottom: 2.6%;
-    margin-left: 79%;
+    margin-left: 36%;
     z-index: 9999;
     overflow: auto;
   }
@@ -803,6 +844,10 @@ input[type=submit]:hover {
   
   /* Contact formulier */
   
+  #contactFieldset{
+    width: 75%;
+  }
+
   input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
